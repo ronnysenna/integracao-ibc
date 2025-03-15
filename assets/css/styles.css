@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* Estilo global */
+body {
+    font-family: "Arial", sans-serif;
+    /* Fundo gradiente suave */
+    background: linear-gradient(to right, #036c9d, #0625d4);
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Oculta elementos inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilos para labels */
+.form-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo para grupos de radio */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.radio-group input {
+    display: none;
+}
+
+.radio-group input:checked + label {
+    background: #0de82e;
+}
+
+/* Estilos para área social e footer */
+#social {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#social a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+#social ion-icon {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+#social span {
+    margin-left: 15px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #888;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
